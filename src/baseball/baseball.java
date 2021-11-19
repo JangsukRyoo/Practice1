@@ -56,6 +56,5 @@ public class baseball {
         System.out.println("GAME OVER");
         sc.close();
     }
-
 }
 
