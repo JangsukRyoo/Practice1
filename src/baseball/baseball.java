@@ -49,7 +49,6 @@ public class baseball {
             }
             strike = 0;
             ball = 0;
-            int out = 0;
             ct = ct + 1;
         }
         System.out.println("회차 : " + (ct -1));
