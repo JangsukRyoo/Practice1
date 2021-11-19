@@ -9,12 +9,9 @@ public class baseball {
         int num = 0;
         int ct = 0;
         boolean round = true;
-
         int strike = 0;
         int ball = 0;
-
         System.out.println("신나는 숫자야구게임");
-
         for (int i = 0; i < comp.length; i ++){
             comp[i] = (int)(Math.random() * 9 )+1;
             
@@ -25,7 +22,6 @@ public class baseball {
                 }
             }
         }
-
         Scanner sc = new Scanner(System.in);
         while(round) {
             System.out.println(ct + " 회차 입니다.");
@@ -37,7 +33,6 @@ public class baseball {
                     System.out.println("1~9사이의 정수를 다시 입력해주세요: ");
                 }
             }
-
             for (int i = 0; i < comp.length; i++) {
                 for (int j = 0; j < user.length; j++) {
 
@@ -48,23 +43,18 @@ public class baseball {
                     }
                 }
             }
-
             System.out.println(strike + " 스트라이크 " + ball + " 볼");
-
             if (strike >= 3) {
                 round = false;
             }
-
             strike = 0;
             ball = 0;
+            int out = 0;
             ct = ct + 1;
         }
-
         System.out.println("회차 : " + (ct -1));
         System.out.println("GAME OVER");
         sc.close();
-
-
     }
 
 }
